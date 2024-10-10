@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Natural Calamity Prediction</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Natural Calamity Prediction</h1>
+
+        <!-- Overview Section -->
+        <section id="overview-section">
+            <h2>Welcome to the AI Natural Calamity Prediction System</h2>
+            <p>Our platform uses AI to predict future natural calamities based on past data, helping you stay prepared and safe. Get real-time updates and personalized advice through our AI chatbot.</p>
+        </section>
+  
+        <!-- Daily Weather Forecast Section -->
+        <section id="weather-section">
+            <h2>Daily Weather Forecast</h2>
+            <input type="text" id="city-input" placeholder="Enter your city">
+            <button id="get-weather-btn">Get Weather</button>
+            <div id="weather-result"></div>
+        </section>
+        
+        <!-- Flood Prediction Section -->
+        <section id="calamity-section">
+            <h2>Flood Prediction</h2>
+            <p>Enter rainfall data to predict flood risk:</p>
+            <input type="number" id="rainfall-input" placeholder="Rainfall (mm)">
+            <button id="predict-flood-btn">Predict Flood Risk</button>
+            <div id="flood-prediction-result"></div>
+        </section>
+        
+        <!-- Earthquake Prediction Section -->
+        <section id="earthquake-section">
+            <h2>Earthquake Prediction</h2>
+            <p>Enter location data to predict earthquake risk:</p>
+            <input type="text" id="earthquake-location" placeholder="Enter location">
+            <button id="predict-earthquake-btn">Predict Earthquake Risk</button>
+            <div id="earthquake-prediction-result"></div>
+        </section>
+
+        <!-- Tsunami Prediction Section -->
+        <section id="tsunami-section">
+            <h2>Tsunami Prediction</h2>
+            <p>Enter sea level data to predict tsunami risk:</p>
+            <input type="number" id="sea-level-input" placeholder="Sea Level (m)">
+            <button id="predict-tsunami-btn">Predict Tsunami Risk</button>
+            <div id="tsunami-prediction-result"></div>
+        </section>
+
+        <!-- Tornado Prediction Section -->
+        <section id="tornado-section">
+            <h2>Tornado Prediction</h2>
+            <p>Enter wind speed data to predict tornado risk:</p>
+            <input type="number" id="wind-speed-input" placeholder="Wind Speed (km/h)">
+            <button id="predict-tornado-btn">Predict Tornado Risk</button>
+            <div id="tornado-prediction-result"></div>
+        </section>
+
+        <!-- Interactive Map Section -->
+        <section id="map-section">
+            <h2>Interactive Map</h2>
+            <p>Explore areas with recent natural calamities and future risk predictions.</p>
+            <div id="map"></div> <!-- Map would be embedded here using a mapping library like Leaflet or Google Maps API -->
+        </section>
+
+        <!-- Data Analysis Section -->
+        <section id="data-analysis-section">
+            <h2>Data Analysis</h2>
+            <p>Visualize past natural calamity data and trends:</p>
+            <div id="data-visualization">
+                <!-- Placeholder for graphs/charts, e.g., using Chart.js -->
+            </div>
+            <input type="file" id="upload-data" accept=".csv">
+            <button id="upload-btn">Upload Data</button>
+        </section>
+
+        <!-- User Registration Section -->
+        <section id="registration-section">
+            <h2>User Registration</h2>
+            <p>Create an account to receive personalized alerts and updates:</p>
+            <input type="text" id="username" placeholder="Username">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="register-btn">Register</button>
+        </section>
+
+        <!-- Contact & Feedback Section -->
+        <section id="contact-section">
+            <h2>Contact Us & Feedback</h2>
+            <form id="feedback-form">
+                <textarea id="feedback-input" placeholder="Your feedback..."></textarea>
+                <button type="submit" id="submit-feedback-btn">Submit Feedback</button>
+            </form>
+            <p>For any inquiries, reach us at <a href="mailto:support@calamitypredictor.com">support@calamitypredictor.com</a></p>
+        </section>
+    </div>
+
+    <!-- Placeholder for the JavaScript code that would make each section functional -->
+</body>
+</html>
